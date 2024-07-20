@@ -1,0 +1,17 @@
+build:
+  zip:
+    assets:
+      enable_es_build_for_admin: false
+      enable_es_build_for_storefront: true
+      npm_strict: true
+
+changelog:
+  enabled: true
+  pattern: '^NEXT-\d+'
+  variables:
+    ticket: '^(NEXT-\d+)\s'
+  template: |
+    {{range .Commits}}- [{{ .Message }}](https://issues.haokeyingxiao.com/issues/{{ .Variables.ticket }})
+    {{end}}
+store:
+  icon: src/Resources/store/icon.png

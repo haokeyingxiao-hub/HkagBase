@@ -1,0 +1,45 @@
+{
+    "name": "haoke-plugin/hkag-base",
+    "description": "hkag-base/hkag-base",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "require": {
+        "haokeyingxiao/core": "~6.6.0",
+        "haokeyingxiao/administration": "~6.6.0",
+        "haokeyingxiao/storefront": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "HkagBase\\HkagBase",
+        "label": {
+            "de-DE": "Haoke platform basic plugin（Do not delete）",
+            "en-GB": "Haoke platform basic plugin（Do not delete）",
+            "zh-CN": "好客平台基础插件（不要删除）"
+        },
+        "description": {
+            "de-DE": "Dieses Plugin bietet die grundlegende Funktionalität für den Betrieb der Haoke-Plattform..",
+            "en-GB": "This plugin provides the basic functionality for running the Haoke platform.",
+            "zh-CN": "这个插件提供运行好客平台的基础功能."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://haokeyingxiao.com",
+            "en-GB": "https://haokeyingxiao.com",
+            "zh-CN": "https://haokeyingxiao.com"
+        },
+        "supportLink": {
+            "de-DE": "https://haokeyingxiao.com",
+            "en-GB": "https://haokeyingxiao.com",
+            "zh-CN": "https://haokeyingxiao.com"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "HkagBase\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HkagBase\\Tests\\": "tests/"
+        }
+    }
+}
